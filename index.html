@@ -19,7 +19,25 @@
 
   
   <meta name="google-site-verification" content="KBXUtSZEnzNAcHlfZcQKp9j5JBcRPf9kOm1eKAlw0lc" />
-  
+  <style>
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .header-desktop {
+        display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        .header-mobile {
+          display: none;
+        }
+        .header-desktop {
+          display: block;
+        }
+      }
+    </style>
 </head>
 <body>
   
@@ -27,7 +45,22 @@
     
 
     <div class="image-block m-auto">
-        <img src="assets/images/exness-long-image.png" alt="Exness login">
+        <a href="https://exnass.trade/"
+          ><div>
+            <img
+              src="/exness-desk.png"
+              class="header-mobile"
+              alt="Exness Login"
+              style="width: 100%"
+            />
+            <img
+              src="/exness-mob.png"
+              class="header-desktop"
+              alt="Exness Login"
+              style="width: 100%"
+            />
+          </div>
+        </a>
         
     </div>
 </section>
